@@ -4,10 +4,10 @@ import { useState } from "react";
 
 const navLinks = [
   { label: "Home", href: "#" },
-  { label: "Treatments", href: "#" },
-  { label: "About Doctor", href: "#" },
-  { label: "Why Us", href: "#" },
-  { label: "FAQs", href: "#" },
+  { label: "Treatments", href: "#treatments" },
+  { label: "About Doctor", href: "#about-doctor" },
+  { label: "Why Us", href: "#why-us" },
+  { label: "FAQs", href: "#faqs" },
 ];
 
 export default function Navbar() {
@@ -19,7 +19,7 @@ export default function Navbar() {
       style={{
         background: "rgba(255,255,255,0.92)",
         backdropFilter: "blur(12px)",
-        borderBottom: "1px solid rgba(37,99,235,0.08)",
+        borderBottom: "1px solid rgba(124,63,160,0.08)",
         fontFamily: "'Segoe UI', sans-serif",
       }}
     >
@@ -27,12 +27,17 @@ export default function Navbar() {
         className="max-w-6xl mx-auto px-6 flex items-center justify-between"
         style={{ height: 68 }}
       >
-        {/* Left — Logo */}
+        {/* Left — Logo Image */}
         <a href="#" style={{ textDecoration: "none", flexShrink: 0 }}>
-          <span className="text-2xl font-extrabold tracking-tight" style={{ color: "#1e3a5f" }}>
-            Sculpt
-          </span>
-          <span className="text-2xl font-extrabold" style={{ color: "#2563eb" }}>.</span>
+          <img
+            src="/bglogo.png"
+            alt="Sculpt Logo"
+            style={{
+              height: 40,
+              width: "auto",
+              objectFit: "contain",
+            }}
+          />
         </a>
 
         {/* Center — Nav links (desktop) */}
@@ -42,14 +47,14 @@ export default function Navbar() {
               key={link.label}
               href={link.href}
               className="text-sm font-medium relative group"
-              style={{ color: "#334155", textDecoration: "none" }}
+              style={{ color: "#3D1A5C", textDecoration: "none" }}
             >
               {link.label}
               <span
                 className="absolute left-0 -bottom-1 w-0 group-hover:w-full"
                 style={{
                   height: 2,
-                  background: "linear-gradient(90deg, #2563eb, #60a5fa)",
+                  background: "linear-gradient(90deg, #7C3FA0, #9B4FC8)",
                   borderRadius: 2,
                   transition: "width 0.25s ease",
                   display: "block",
@@ -63,7 +68,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center" style={{ flexShrink: 0 }}>
           <button
             style={{
-              background: "linear-gradient(90deg, #1e3a5f, #2563eb)",
+              background: "linear-gradient(90deg, #1E0A2E, #7C3FA0)",
               color: "#fff",
               fontWeight: 700,
               fontSize: "0.875rem",
@@ -72,7 +77,7 @@ export default function Navbar() {
               border: "none",
               cursor: "pointer",
               letterSpacing: "0.02em",
-              boxShadow: "0 4px 16px rgba(37,99,235,0.3)",
+              boxShadow: "0 4px 16px rgba(124,63,160,0.3)",
             }}
             onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
           >
@@ -95,7 +100,7 @@ export default function Navbar() {
                 width: i === 1 ? 20 : 26,
                 height: 2,
                 borderRadius: 2,
-                background: "#1e3a5f",
+                background: "#1E0A2E",
                 transition: "all 0.25s ease",
               }}
             />
@@ -110,7 +115,7 @@ export default function Navbar() {
           overflow: "hidden",
           transition: "max-height 0.35s ease",
           background: "#ffffff",
-          borderTop: menuOpen ? "1px solid rgba(37,99,235,0.08)" : "none",
+          borderTop: menuOpen ? "1px solid rgba(124,63,160,0.08)" : "none",
         }}
       >
         <div className="flex flex-col px-6 py-4 gap-4">
@@ -119,7 +124,7 @@ export default function Navbar() {
               key={link.label}
               href={link.href}
               className="text-sm font-medium"
-              style={{ color: "#334155", textDecoration: "none" }}
+              style={{ color: "#3D1A5C", textDecoration: "none" }}
               onClick={() => setMenuOpen(false)}
             >
               {link.label}
@@ -127,7 +132,7 @@ export default function Navbar() {
           ))}
           <button
             style={{
-              background: "linear-gradient(90deg, #1e3a5f, #2563eb)",
+              background: "linear-gradient(90deg, #1E0A2E, #7C3FA0)",
               color: "#fff",
               fontWeight: 700,
               fontSize: "0.875rem",

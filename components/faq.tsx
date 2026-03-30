@@ -74,10 +74,10 @@ export default function FAQ() {
   const mobileFaqs = showAll ? faqs : faqs.slice(0, 5);
 
   return (
-    <section
+    <section id="faqs"
       className="w-full max-sm:py-6 py-20 px-4"
       style={{
-        background: "linear-gradient(160deg, #f0f6ff 0%, #e8f0fb 50%, #f5f0ff 100%)",
+        background: "linear-gradient(160deg, #FAF8F5 0%, #F0E5FA 50%, #F8F2FC 100%)",
         fontFamily: "'Segoe UI', sans-serif",
       }}
     >
@@ -87,18 +87,18 @@ export default function FAQ() {
         <div className="text-center max-sm:mb-5 mb-14">
           <span
             className="inline-block mb-4 px-5 py-1.5 rounded-full text-sm font-semibold tracking-widest uppercase"
-            style={{ background: "rgba(37,99,235,0.1)", color: "#2563eb" }}
+            style={{ background: "rgba(124,63,160,0.1)", color: "#7C3FA0" }}
           >
             Got Questions?
           </span>
           <h2
             className="text-4xl font-extrabold leading-tight max-w-3xl mx-auto"
-            style={{ color: "#1e3a5f" }}
+            style={{ color: "#1E0A2E" }}
           >
             Questions Patients Commonly Ask About{" "}
-            <span style={{ color: "#2563eb" }}>Anti-Aging Treatments</span>
+            <span style={{ color: "#7C3FA0" }}>Anti-Aging Treatments</span>
           </h2>
-          <p className="mt-4 text-base" style={{ color: "#64748b" }}>
+          <p className="mt-4 text-base" style={{ color: "#7A5A8A" }}>
             Clear, honest answers to help you make the right decision.
           </p>
         </div>
@@ -114,8 +114,8 @@ export default function FAQ() {
                 className="cursor-pointer rounded-2xl overflow-hidden"
                 style={{
                   background: isOpen ? "#ffffff" : "rgba(255,255,255,0.65)",
-                  boxShadow: isOpen ? "0 8px 32px rgba(37,99,235,0.14)" : "0 2px 12px rgba(37,99,235,0.06)",
-                  border: isOpen ? "1.5px solid #bfdbfe" : "1.5px solid transparent",
+                  boxShadow: isOpen ? "0 8px 32px rgba(124,63,160,0.14)" : "0 2px 12px rgba(124,63,160,0.06)",
+                  border: isOpen ? "1.5px solid #EAD9F5" : "1.5px solid transparent",
                   transition: "all 0.3s ease",
                 }}
               >
@@ -125,31 +125,31 @@ export default function FAQ() {
                       className="flex-shrink-0 flex items-center justify-center rounded-xl text-sm font-bold"
                       style={{
                         width: 36, height: 36,
-                        background: isOpen ? "linear-gradient(135deg, #2563eb, #60a5fa)" : "rgba(37,99,235,0.09)",
-                        color: isOpen ? "#fff" : "#2563eb",
+                        background: isOpen ? "linear-gradient(135deg, #7C3FA0, #9B4FC8)" : "rgba(124,63,160,0.09)",
+                        color: isOpen ? "#fff" : "#7C3FA0",
                         transition: "all 0.3s ease",
                       }}
                     >
                       {faq.id}
                     </span>
-                    <p className="text-sm font-semibold leading-snug" style={{ color: isOpen ? "#1e3a5f" : "#334155" }}>
+                    <p className="text-sm font-semibold leading-snug" style={{ color: isOpen ? "#1E0A2E" : "#3D1A5C" }}>
                       {faq.question}
                     </p>
                   </div>
                   <span
                     className="flex-shrink-0 flex items-center justify-center rounded-full"
-                    style={{ width: 28, height: 28, background: isOpen ? "#2563eb" : "rgba(37,99,235,0.09)", transition: "all 0.3s ease" }}
+                    style={{ width: 28, height: 28, background: isOpen ? "#7C3FA0" : "rgba(124,63,160,0.09)", transition: "all 0.3s ease" }}
                   >
                     <svg viewBox="0 0 24 24" fill="none" width="14" height="14"
                       style={{ transform: isOpen ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.3s ease" }}>
-                      <path d="M6 9l6 6 6-6" stroke={isOpen ? "#fff" : "#2563eb"} strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M6 9l6 6 6-6" stroke={isOpen ? "#fff" : "#7C3FA0"} strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </span>
                 </div>
                 <div style={{ maxHeight: isOpen ? 200 : 0, overflow: "hidden", transition: "max-height 0.35s ease" }}>
                   <div className="px-6 pb-5" style={{ paddingLeft: "calc(1.5rem + 36px + 1rem)" }}>
-                    <div className="w-10 mb-3" style={{ height: 2, background: "linear-gradient(90deg, #2563eb, #93c5fd)" }} />
-                    <p className="text-sm leading-relaxed" style={{ color: "#64748b" }}>{faq.answer}</p>
+                    <div className="w-10 mb-3" style={{ height: 2, background: "linear-gradient(90deg, #7C3FA0, #C084FC)" }} />
+                    <p className="text-sm leading-relaxed" style={{ color: "#7A5A8A" }}>{faq.answer}</p>
                   </div>
                 </div>
               </div>
@@ -163,9 +163,9 @@ export default function FAQ() {
             onClick={() => setShowAll(!showAll)}
             className="flex items-center gap-2 font-semibold text-sm px-6 py-3 rounded-xl"
             style={{
-              background: showAll ? "rgba(37,99,235,0.08)" : "linear-gradient(135deg, #2563eb, #60a5fa)",
-              color: showAll ? "#2563eb" : "#fff",
-              border: showAll ? "1.5px solid #bfdbfe" : "none",
+              background: showAll ? "rgba(124,63,160,0.08)" : "linear-gradient(135deg, #7C3FA0, #9B4FC8)",
+              color: showAll ? "#7C3FA0" : "#fff",
+              border: showAll ? "1.5px solid #EAD9F5" : "none",
               cursor: "pointer",
               transition: "all 0.3s ease",
             }}
@@ -173,7 +173,7 @@ export default function FAQ() {
             {showAll ? "Read Less" : "Read More"}
             <svg viewBox="0 0 24 24" fill="none" width="16" height="16"
               style={{ transform: showAll ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.3s ease" }}>
-              <path d="M6 9l6 6 6-6" stroke={showAll ? "#2563eb" : "#fff"} strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M6 9l6 6 6-6" stroke={showAll ? "#7C3FA0" : "#fff"} strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </button>
         </div>
@@ -192,9 +192,9 @@ export default function FAQ() {
                     style={{
                       background: isOpen ? "#ffffff" : "rgba(255,255,255,0.65)",
                       boxShadow: isOpen
-                        ? "0 8px 32px rgba(37,99,235,0.14)"
-                        : "0 2px 12px rgba(37,99,235,0.06)",
-                      border: isOpen ? "1.5px solid #bfdbfe" : "1.5px solid transparent",
+                        ? "0 8px 32px rgba(124,63,160,0.14)"
+                        : "0 2px 12px rgba(124,63,160,0.06)",
+                      border: isOpen ? "1.5px solid #EAD9F5" : "1.5px solid transparent",
                       transition: "all 0.3s ease",
                     }}
                   >
@@ -207,9 +207,9 @@ export default function FAQ() {
                             width: 36,
                             height: 36,
                             background: isOpen
-                              ? "linear-gradient(135deg, #2563eb, #60a5fa)"
-                              : "rgba(37,99,235,0.09)",
-                            color: isOpen ? "#fff" : "#2563eb",
+                              ? "linear-gradient(135deg, #7C3FA0, #9B4FC8)"
+                              : "rgba(124,63,160,0.09)",
+                            color: isOpen ? "#fff" : "#7C3FA0",
                             transition: "all 0.3s ease",
                           }}
                         >
@@ -217,7 +217,7 @@ export default function FAQ() {
                         </span>
                         <p
                           className="text-sm font-semibold leading-snug"
-                          style={{ color: isOpen ? "#1e3a5f" : "#334155" }}
+                          style={{ color: isOpen ? "#1E0A2E" : "#3D1A5C" }}
                         >
                           {faq.question}
                         </p>
@@ -227,7 +227,7 @@ export default function FAQ() {
                         style={{
                           width: 28,
                           height: 28,
-                          background: isOpen ? "#2563eb" : "rgba(37,99,235,0.09)",
+                          background: isOpen ? "#7C3FA0" : "rgba(124,63,160,0.09)",
                           transition: "all 0.3s ease",
                         }}
                       >
@@ -243,7 +243,7 @@ export default function FAQ() {
                         >
                           <path
                             d="M6 9l6 6 6-6"
-                            stroke={isOpen ? "#fff" : "#2563eb"}
+                            stroke={isOpen ? "#fff" : "#7C3FA0"}
                             strokeWidth="2.2"
                             strokeLinecap="round"
                             strokeLinejoin="round"
@@ -266,9 +266,9 @@ export default function FAQ() {
                       >
                         <div
                           className="w-10 mb-3"
-                          style={{ height: 2, background: "linear-gradient(90deg, #2563eb, #93c5fd)" }}
+                          style={{ height: 2, background: "linear-gradient(90deg, #7C3FA0, #C084FC)" }}
                         />
-                        <p className="text-sm leading-relaxed" style={{ color: "#64748b" }}>
+                        <p className="text-sm leading-relaxed" style={{ color: "#7A5A8A" }}>
                           {faq.answer}
                         </p>
                       </div>
@@ -285,7 +285,7 @@ export default function FAQ() {
         <div
           className="relative overflow-hidden rounded-3xl px-6 py-8 sm:px-10 sm:py-12 flex flex-col md:flex-row items-center justify-between gap-6"
           style={{
-            background: "linear-gradient(120deg, #1e3a5f 0%, #2563eb 60%, #60a5fa 100%)",
+            background: "linear-gradient(120deg, #1E0A2E 0%, #7C3FA0 60%, #9B4FC8 100%)",
           }}
         >
           {/* Decorative circles */}
@@ -312,7 +312,7 @@ export default function FAQ() {
             <p className="text-white text-2xl font-extrabold leading-snug mb-1">
               Still have questions?
             </p>
-            <p className="text-blue-200 text-base font-medium">
+            <p className="text-base font-medium" style={{ color: "#C4B5FD" }}>
               Talk to our expert and get clarity before you decide.
             </p>
           </div>
@@ -321,7 +321,7 @@ export default function FAQ() {
             className="relative z-10 w-full md:w-auto flex-shrink-0 font-bold rounded-xl px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-base text-center"
             style={{
               background: "#ffffff",
-              color: "#2563eb",
+              color: "#7C3FA0",
               boxShadow: "0 6px 24px rgba(0,0,0,0.18)",
               letterSpacing: "0.02em",
               border: "none",

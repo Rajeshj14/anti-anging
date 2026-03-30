@@ -4,12 +4,12 @@ export default function Footer() {
   return (
     <footer
       style={{
-        background: "linear-gradient(160deg, #0f1e35 0%, #1a2f50 60%, #0d1b2e 100%)",
+        background: "linear-gradient(160deg, #1E0A2E 0%, #2D0F48 60%, #150726 100%)",
         fontFamily: "'Segoe UI', sans-serif",
       }}
     >
       {/* Top accent line */}
-      <div style={{ height: 3, background: "linear-gradient(90deg, #2563eb, #60a5fa, #2563eb)" }} />
+      <div style={{ height: 3, background: "linear-gradient(90deg, #7C3FA0, #9B4FC8, #7C3FA0)" }} />
 
       <div className="max-w-6xl mx-auto px-6 pt-14 pb-8">
 
@@ -19,20 +19,21 @@ export default function Footer() {
           {/* Brand column */}
           <div className="md:col-span-1">
             <div className="mb-4">
-              <span
-                className="text-2xl font-extrabold tracking-tight"
-                style={{ color: "#ffffff" }}
-              >
-                Sculpt
-              </span>
-              <span
-                className="text-2xl font-extrabold tracking-tight"
-                style={{ color: "#60a5fa" }}
-              >
-                .
-              </span>
+              <a href="/" className="flex items-center gap-2" style={{ textDecoration: "none" }}>
+                {/* Logo image */}
+                <img
+                  src="/bglogo.png"
+                  alt="Logo"
+                  style={{
+                    width: 180,
+                    height: 80,
+                    borderRadius: 10,
+                    objectFit: "cover",
+                  }}
+                />
+              </a>
             </div>
-            <p className="text-sm leading-relaxed mb-6" style={{ color: "#94a3b8" }}>
+            <p className="text-sm leading-relaxed mb-6" style={{ color: "#B090C0" }}>
               Bangalore's trusted destination for doctor-led anti-aging treatments. Natural-looking results with a safety-first approach.
             </p>
             {/* Social icons */}
@@ -57,7 +58,7 @@ export default function Footer() {
                     cursor: "pointer",
                   }}
                 >
-                  <svg viewBox="0 0 24 24" fill="#94a3b8" width="15" height="15">
+                  <svg viewBox="0 0 24 24" fill="#B090C0" width="15" height="15">
                     <path d={path} />
                   </svg>
                 </button>
@@ -67,7 +68,7 @@ export default function Footer() {
 
           {/* Treatments */}
           <div>
-            <h4 className="text-sm font-bold uppercase tracking-widest mb-5" style={{ color: "#60a5fa" }}>
+            <h4 className="text-sm font-bold uppercase tracking-widest mb-5" style={{ color: "#9B4FC8" }}>
               Treatments
             </h4>
             <ul className="flex flex-col gap-3">
@@ -82,13 +83,13 @@ export default function Footer() {
                   <a
                     href="#"
                     className="text-sm flex items-center gap-2 group"
-                    style={{ color: "#94a3b8", textDecoration: "none" }}
+                    style={{ color: "#B090C0", textDecoration: "none" }}
                   >
                     <span
                       style={{
                         width: 5, height: 5,
                         borderRadius: "50%",
-                        background: "#2563eb",
+                        background: "#7C3FA0",
                         flexShrink: 0,
                       }}
                     />
@@ -101,7 +102,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-sm font-bold uppercase tracking-widest mb-5" style={{ color: "#60a5fa" }}>
+            <h4 className="text-sm font-bold uppercase tracking-widest mb-5" style={{ color: "#9B4FC8" }}>
               Quick Links
             </h4>
             <ul className="flex flex-col gap-3">
@@ -116,13 +117,13 @@ export default function Footer() {
                   <a
                     href="#"
                     className="text-sm flex items-center gap-2"
-                    style={{ color: "#94a3b8", textDecoration: "none" }}
+                    style={{ color: "#B090C0", textDecoration: "none" }}
                   >
                     <span
                       style={{
                         width: 5, height: 5,
                         borderRadius: "50%",
-                        background: "#2563eb",
+                        background: "#7C3FA0",
                         flexShrink: 0,
                       }}
                     />
@@ -135,22 +136,22 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-sm font-bold uppercase tracking-widest mb-5" style={{ color: "#60a5fa" }}>
+            <h4 className="text-sm font-bold uppercase tracking-widest mb-5" style={{ color: "#9B4FC8" }}>
               Contact Us
             </h4>
             <ul className="flex flex-col gap-4">
               {[
                 {
                   icon: "M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z M15 11a3 3 0 11-6 0 3 3 0 016 0z",
-                  text: "Bangalore, Karnataka, India",
+                  text: "315, Sapthagiri 60 Feet, Health Layout, Chandrashekhara Layout, Annapurneshwari Nagar, Bengaluru,Karnataka 560091, India",
                 },
                 {
                   icon: "M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z",
-                  text: "+91 00000 00000",
+                  text: "+91 9606601166",
                 },
                 {
                   icon: "M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z",
-                  text: "hello@sculpt.in",
+                  text: "sculptmaxillo.clinic@gmail.com",
                 },
               ].map(({ icon, text }) => (
                 <li key={text} className="flex items-start gap-3">
@@ -158,23 +159,23 @@ export default function Footer() {
                     className="flex-shrink-0 flex items-center justify-center rounded-lg mt-0.5"
                     style={{
                       width: 32, height: 32,
-                      background: "rgba(37,99,235,0.15)",
+                      background: "rgba(124,63,160,0.15)",
                     }}
                   >
-                    <svg viewBox="0 0 24 24" fill="none" width="15" height="15" stroke="#60a5fa" strokeWidth="1.8">
+                    <svg viewBox="0 0 24 24" fill="none" width="15" height="15" stroke="#9B4FC8" strokeWidth="1.8">
                       <path d={icon} strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </div>
-                  <span className="text-sm leading-relaxed" style={{ color: "#94a3b8" }}>{text}</span>
+                  <span className="text-sm leading-relaxed" style={{ color: "#B090C0" }}>{text}</span>
                 </li>
               ))}
             </ul>
 
             {/* CTA */}
-            <button
+            {/* <button
               className="mt-6 w-full py-3 rounded-xl text-sm font-bold"
               style={{
-                background: "linear-gradient(90deg, #2563eb, #60a5fa)",
+                background: "linear-gradient(90deg, #7C3FA0, #9B4FC8)",
                 color: "#fff",
                 border: "none",
                 cursor: "pointer",
@@ -183,7 +184,7 @@ export default function Footer() {
               onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
             >
               Book Consultation
-            </button>
+            </button> */}
           </div>
 
         </div>
@@ -193,16 +194,16 @@ export default function Footer() {
 
         {/* Bottom row */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-3">
-          <p className="text-xs" style={{ color: "#475569" }}>
-            © {new Date().getFullYear()} Sculpt Aesthetic Clinic. All rights reserved.
+          <p className="text-md" style={{ color: "#6B4F7A" }}>
+            © {new Date().getFullYear()} Sculpt The Maxillofacial Clinic. All rights reserved.
           </p>
           <div className="flex gap-6">
-            {["Privacy Policy", "Terms of Use", "Disclaimer"].map((item) => (
+            {["Privacy Policy"].map((item) => (
               <a
                 key={item}
-                href="#"
-                className="text-xs"
-                style={{ color: "#475569", textDecoration: "none" }}
+                href="/privacy-policy"
+                className="text-md"
+                style={{ color: "#6B4F7A", textDecoration: "none" }}
               >
                 {item}
               </a>

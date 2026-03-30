@@ -6,7 +6,7 @@ export default function WelcomePatients() {
   return (
     <section
       className="w-full flex items-center justify-center px-6 py-8"
-      style={{ background: "#e8f2fb", fontFamily: "'Segoe UI', sans-serif" }}
+      style={{ background: "#F0E5FA", fontFamily: "'Segoe UI', sans-serif" }}
     >
       {/* ── Outer container ── */}
       <div
@@ -15,7 +15,7 @@ export default function WelcomePatients() {
           maxWidth: 1160,
           borderRadius: 24,
           minHeight: 300,
-          background: "linear-gradient(120deg, #2253c3 0%, #3a6fd8 40%, #4a85e8 70%, #6fa3ef 100%)",
+          background: "linear-gradient(120deg, #3A0D5C 0%, #5C1F82 40%, #7C3FA0 70%, #9B4FC8 100%)",
         }}
       >
 
@@ -83,13 +83,13 @@ export default function WelcomePatients() {
             <button
               className="flex items-center justify-center gap-2 font-bold text-white"
               style={{
-                background: "linear-gradient(90deg, #22b6d4 0%, #1ab3d4 100%)",
+                background: "linear-gradient(90deg, #9B4FC8 0%, #7C3FA0 100%)",
                 border: "none",
                 borderRadius: 50,
                 padding: "11px 18px",
                 fontSize: "0.9rem",
                 cursor: "pointer",
-                boxShadow: "0 4px 20px rgba(34,182,212,0.35)",
+                boxShadow: "0 4px 20px rgba(124,63,160,0.35)",
                 letterSpacing: "0.02em",
               }}
             onClick={scrollToContact}

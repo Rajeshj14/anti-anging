@@ -8,6 +8,7 @@ import TreatmentsWeOffer from "@/components/treatment-offer";
 import OurValues from "@/components/treatments";
 import Departments from "@/components/why-choose-us";
 import BookAppointment from "@/components/contact";
+import { SurgeryResultsSection } from "@/components/beforeafter";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Navbar />
       <HeroBanner />
       <OurValues />
+      <SurgeryResultsSection />
       <TreatmentsWeOffer />
       <AboutUs />
       <Departments />

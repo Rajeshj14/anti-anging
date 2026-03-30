@@ -46,11 +46,11 @@ export default function OurValues() {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
 
   return (
-    <section className="bg-white flex flex-col items-center justify-center max-sm:py-5 py-10 px-4">
+    <section id="treatments" className="bg-white flex flex-col items-center justify-center max-sm:py-5 py-10 px-4">
       {/* Title */}
       <h2
         className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-10 max-sm:mb-5 lg:mb-20 text-center max-w-4xl"
-        style={{ color: "#1e3a5f", fontFamily: "Georgia, serif" }}
+        style={{ color: "#1E0A2E", fontFamily: "Georgia, serif" }}
       >
         Experience our significally designed 5-step process for safe & effective anti-aging treatments
       </h2>
@@ -77,8 +77,8 @@ export default function OurValues() {
                     minHeight: "240px",
                     borderRadius: "20px",
                     background: "#ffffff",
-                    boxShadow: "0 8px 40px 0 rgba(59,130,246,0.13), 0 2px 8px 0 rgba(0,0,0,0.07)",
-                    border: "1px solid #e8f0fb",
+                    boxShadow: "0 8px 40px 0 rgba(124,63,160,0.13), 0 2px 8px 0 rgba(0,0,0,0.07)",
+                    border: "1px solid #F0E5FA",
                     padding: "0",
                     overflow: "visible",
                   }}
@@ -94,7 +94,7 @@ export default function OurValues() {
                       width: "calc(100% - 32px)",
                       borderRadius: "14px",
                       background: isHovered
-                        ? "linear-gradient(90deg, #7eb8ef 0%, #5a9fd4 100%)"
+                        ? "linear-gradient(90deg, #C084FC 0%, #9B4FC8 100%)"
                         : "transparent",
                       zIndex: 2,
                       minWidth: "180px",
@@ -115,7 +115,7 @@ export default function OurValues() {
                       }}
                     >
                       <div style={{
-                        color: isHovered ? "white" : "#1e3a5f",
+                        color: isHovered ? "white" : "#1E0A2E",
                         transition: "all 0.3s ease",
                       }}>
                         {val.icon}
@@ -124,7 +124,7 @@ export default function OurValues() {
                     <span
                       className="text-lg font-bold transition-all duration-300"
                       style={{
-                        color: isHovered ? "#ffffff" : "#1e3a5f",
+                        color: isHovered ? "#ffffff" : "#1E0A2E",
                         whiteSpace: "nowrap",
                         transform: isHovered ? "scale(1.1)" : "scale(1)",
                         display: "inline-block",
@@ -140,7 +140,7 @@ export default function OurValues() {
                     className="flex flex-col items-center justify-end h-full px-7 text-center"
                     style={{ paddingTop: "110px", paddingBottom: "32px" }}
                   >
-                    <p className="text-sm leading-relaxed" style={{ color: "#6b7a99" }}>
+                    <p className="text-sm leading-relaxed" style={{ color: "#7A5A8A" }}>
                       {val.description}
                     </p>
                   </div>
@@ -158,8 +158,8 @@ export default function OurValues() {
                 minHeight: "240px",
                 borderRadius: "20px",
                 background: "#ffffff",
-                boxShadow: "0 4px 24px 0 rgba(59,130,246,0.08), 0 1px 4px 0 rgba(0,0,0,0.05)",
-                border: "1px solid #e8f0fb",
+                boxShadow: "0 4px 24px 0 rgba(124,63,160,0.08), 0 1px 4px 0 rgba(0,0,0,0.05)",
+                border: "1px solid #F0E5FA",
                 padding: "0",
                 overflow: "visible",
               }}
@@ -177,7 +177,7 @@ export default function OurValues() {
                   width: "calc(100% - 32px)",
                   borderRadius: "14px",
                   background: isHovered
-                    ? "linear-gradient(90deg, #7eb8ef 0%, #5a9fd4 100%)"
+                    ? "linear-gradient(90deg, #C084FC 0%, #9B4FC8 100%)"
                     : "transparent",
                   zIndex: 2,
                   minWidth: "180px",
@@ -198,7 +198,7 @@ export default function OurValues() {
                   }}
                 >
                   <div style={{
-                    color: isHovered ? "white" : "#1e3a5f",
+                    color: isHovered ? "white" : "#1E0A2E",
                     transition: "all 0.3s ease",
                   }}>
                     {val.icon}
@@ -207,7 +207,7 @@ export default function OurValues() {
                 <span
                   className="text-lg font-bold transition-all duration-300"
                   style={{
-                    color: isHovered ? "#ffffff" : "#1e3a5f",
+                    color: isHovered ? "#ffffff" : "#1E0A2E",
                     whiteSpace: "nowrap",
                     transform: isHovered ? "scale(1.1)" : "scale(1)",
                     display: "inline-block",
@@ -223,7 +223,7 @@ export default function OurValues() {
                 className="flex flex-col items-center justify-end h-full px-7 text-center"
                 style={{ paddingTop: "110px", paddingBottom: "32px" }}
               >
-                <p className="text-sm leading-relaxed" style={{ color: "#6b7a99" }}>
+                <p className="text-sm leading-relaxed" style={{ color: "#7A5A8A" }}>
                   {val.description}
                 </p>
               </div>
@@ -245,8 +245,8 @@ export default function OurValues() {
                 minHeight: "240px",
                 borderRadius: "20px",
                 background: "#ffffff",
-                boxShadow: "0 4px 24px 0 rgba(59,130,246,0.08), 0 1px 4px 0 rgba(0,0,0,0.05)",
-                border: "1px solid #e8f0fb",
+                boxShadow: "0 4px 24px 0 rgba(124,63,160,0.08), 0 1px 4px 0 rgba(0,0,0,0.05)",
+                border: "1px solid #F0E5FA",
                 padding: "0",
                 overflow: "visible",
               }}
@@ -264,7 +264,7 @@ export default function OurValues() {
                   width: "calc(100% - 32px)",
                   borderRadius: "14px",
                   background: isHovered
-                    ? "linear-gradient(90deg, #7eb8ef 0%, #5a9fd4 100%)"
+                    ? "linear-gradient(90deg, #C084FC 0%, #9B4FC8 100%)"
                     : "transparent",
                   zIndex: 2,
                   minWidth: "180px",
@@ -285,7 +285,7 @@ export default function OurValues() {
                   }}
                 >
                   <div style={{
-                    color: isHovered ? "white" : "#1e3a5f",
+                    color: isHovered ? "white" : "#1E0A2E",
                     transition: "all 0.3s ease",
                   }}>
                     {val.icon}
@@ -294,7 +294,7 @@ export default function OurValues() {
                 <span
                   className="text-lg font-bold transition-all duration-300"
                   style={{
-                    color: isHovered ? "#ffffff" : "#1e3a5f",
+                    color: isHovered ? "#ffffff" : "#1E0A2E",
                     whiteSpace: "nowrap",
                     transform: isHovered ? "scale(1.1)" : "scale(1)",
                     display: "inline-block",
@@ -310,7 +310,7 @@ export default function OurValues() {
                 className="flex flex-col items-center justify-end h-full px-7 text-center"
                 style={{ paddingTop: "110px", paddingBottom: "32px" }}
               >
-                <p className="text-sm leading-relaxed" style={{ color: "#6b7a99" }}>
+                <p className="text-sm leading-relaxed" style={{ color: "#7A5A8A" }}>
                   {val.description}
                 </p>
               </div>
@@ -323,8 +323,8 @@ export default function OurValues() {
       <button
         className="px-5 py-3 sm:px-8 rounded-full text-sm font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
         style={{
-          background: "linear-gradient(135deg, #4a90d9 0%, #2563eb 100%)",
-          boxShadow: "0 4px 16px rgba(37,99,235,0.25)",
+          background: "linear-gradient(135deg, #7C3FA0 0%, #7C3FA0 100%)",
+          boxShadow: "0 4px 16px rgba(124,63,160,0.25)",
         }}
         onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
       >

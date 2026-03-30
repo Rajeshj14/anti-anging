@@ -25,9 +25,9 @@ export default function Departments() {
   const next = () => setCurrentIndex((i) => (i === departments.length - 1 ? 0 : i + 1));
 
   return (
-    <section
+    <section id="why-us"
       className="w-full flex flex-col items-center justify-center py-10 px-6"
-      style={{ background: "#f0f6ff", fontFamily: "'Segoe UI', sans-serif" }}
+      style={{ background: "#FAF8F5", fontFamily: "'Segoe UI', sans-serif" }}
     >
 
       {/* ══════════════════════════════════════
@@ -47,12 +47,12 @@ export default function Departments() {
             style={{
               height: BG_HEIGHT,
               borderRadius: 28,
-              background: "linear-gradient(130deg, #c7dcf5 0%, #8fb8e8 30%, #a8ccf0 60%, #d6e9fb 100%)",
+              background: "linear-gradient(130deg, #E8D5F5 0%, #C084FC 30%, #D8B4FE 60%, #F3E8FF 100%)",
             }}
           >
             <div className="absolute" style={{ top: -60, left: "28%", width: 260, height: 380, background: "rgba(255,255,255,0.13)", transform: "rotate(-18deg)", borderRadius: 60 }} />
-            <div className="absolute" style={{ top: 28, right: 120, width: 64, height: 64, borderRadius: "50%", background: "rgba(147,197,253,0.45)" }} />
-            <div className="absolute" style={{ top: 84, right: 64, width: 9, height: 9, borderRadius: "50%", background: "#2563eb", opacity: 0.4 }} />
+            <div className="absolute" style={{ top: 28, right: 120, width: 64, height: 64, borderRadius: "50%", background: "rgba(201,132,252,0.45)" }} />
+            <div className="absolute" style={{ top: 84, right: 64, width: 9, height: 9, borderRadius: "50%", background: "#7C3FA0", opacity: 0.4 }} />
           </div>
 
           {/* Heading */}
@@ -81,8 +81,8 @@ export default function Departments() {
                     height: CARD_HEIGHT,
                     borderRadius: 20,
                     padding: "28px 16px 24px",
-                    background: isActive ? "#2c5fa3" : "#ffffff",
-                    boxShadow: isActive ? "0 12px 36px rgba(37,99,235,0.28)" : "0 4px 24px rgba(37,99,235,0.10)",
+                    background: isActive ? "#5C1F82" : "#ffffff",
+                    boxShadow: isActive ? "0 12px 36px rgba(124,63,160,0.28)" : "0 4px 24px rgba(124,63,160,0.10)",
                     transition: "all 0.25s ease",
                   }}
                 >
@@ -91,7 +91,7 @@ export default function Departments() {
                   </div>
                   <p
                     className="text-center font-bold leading-snug"
-                    style={{ color: isActive ? "#ffffff" : "#1e293b", fontSize: "0.97rem", transition: "color 0.25s ease" }}
+                    style={{ color: isActive ? "#ffffff" : "#1E0A2E", fontSize: "0.97rem", transition: "color 0.25s ease" }}
                   >
                     {dept.label.split("\n").map((line, i) => (
                       <span key={i}>{line}{i === 0 && <br />}</span>
@@ -105,22 +105,22 @@ export default function Departments() {
           {/* Left Arrow */}
           <button
             className="absolute flex items-center justify-center"
-            style={{ left: -5, top: CARD_TOP + CARD_HEIGHT / 2, transform: "translateY(-50%)", width: 40, height: 40, borderRadius: 8, background: "#ffffff", boxShadow: "0 2px 12px rgba(37,99,235,0.15)", border: "none", cursor: "pointer", zIndex: 20 }}
+            style={{ left: -5, top: CARD_TOP + CARD_HEIGHT / 2, transform: "translateY(-50%)", width: 40, height: 40, borderRadius: 8, background: "#ffffff", boxShadow: "0 2px 12px rgba(124,63,160,0.15)", border: "none", cursor: "pointer", zIndex: 20 }}
             aria-label="Previous"
           >
             <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
-              <path d="M15 18l-6-6 6-6" stroke="#2563eb" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M15 18l-6-6 6-6" stroke="#7C3FA0" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </button>
 
           {/* Right Arrow */}
           <button
             className="absolute flex items-center justify-center"
-            style={{ right: -5, top: CARD_TOP + CARD_HEIGHT / 2, transform: "translateY(-50%)", width: 40, height: 40, borderRadius: 8, background: "#ffffff", boxShadow: "0 2px 12px rgba(37,99,235,0.15)", border: "none", cursor: "pointer", zIndex: 20 }}
+            style={{ right: -5, top: CARD_TOP + CARD_HEIGHT / 2, transform: "translateY(-50%)", width: 40, height: 40, borderRadius: 8, background: "#ffffff", boxShadow: "0 2px 12px rgba(124,63,160,0.15)", border: "none", cursor: "pointer", zIndex: 20 }}
             aria-label="Next"
           >
             <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
-              <path d="M9 18l6-6-6-6" stroke="#2563eb" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M9 18l6-6-6-6" stroke="#7C3FA0" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </button>
         </div>
@@ -136,13 +136,13 @@ export default function Departments() {
           className="relative w-full overflow-hidden flex flex-col items-center justify-center"
           style={{
             borderRadius: 24,
-            background: "linear-gradient(130deg, #c7dcf5 0%, #8fb8e8 30%, #a8ccf0 60%, #d6e9fb 100%)",
+            background: "linear-gradient(130deg, #E8D5F5 0%, #C084FC 30%, #D8B4FE 60%, #F3E8FF 100%)",
             padding: "40px 24px 80px",
           }}
         >
           {/* Decorative */}
           <div className="absolute" style={{ top: -30, left: "20%", width: 160, height: 220, background: "rgba(255,255,255,0.13)", transform: "rotate(-18deg)", borderRadius: 40 }} />
-          <div className="absolute" style={{ top: 16, right: 40, width: 44, height: 44, borderRadius: "50%", background: "rgba(147,197,253,0.45)" }} />
+          <div className="absolute" style={{ top: 16, right: 40, width: 44, height: 44, borderRadius: "50%", background: "rgba(201,132,252,0.45)" }} />
 
           <h2
             className="text-center font-extrabold text-white relative z-10"
@@ -159,11 +159,11 @@ export default function Departments() {
           <button
             onClick={prev}
             className="absolute flex items-center justify-center z-20"
-            style={{ left: 0, width: 38, height: 38, borderRadius: 8, background: "#ffffff", boxShadow: "0 2px 12px rgba(37,99,235,0.18)", border: "none", cursor: "pointer" }}
+            style={{ left: 0, width: 38, height: 38, borderRadius: 8, background: "#ffffff", boxShadow: "0 2px 12px rgba(124,63,160,0.18)", border: "none", cursor: "pointer" }}
             aria-label="Previous"
           >
             <svg viewBox="0 0 24 24" fill="none" width="18" height="18">
-              <path d="M15 18l-6-6 6-6" stroke="#2563eb" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M15 18l-6-6 6-6" stroke="#7C3FA0" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </button>
 
@@ -176,14 +176,14 @@ export default function Departments() {
               borderRadius: 20,
               padding: "28px 20px 24px",
               background: "#ffffff",
-              boxShadow: "0 8px 32px rgba(37,99,235,0.14)",
+              boxShadow: "0 8px 32px rgba(124,63,160,0.14)",
               transition: "all 0.3s ease",
             }}
           >
             <div className="mb-4 flex items-center justify-center">
               <img src={departments[currentIndex].icon} alt="" width={64} height={64} />
             </div>
-            <p className="text-center font-bold leading-snug" style={{ color: "#1e293b", fontSize: "0.97rem" }}>
+            <p className="text-center font-bold leading-snug" style={{ color: "#1E0A2E", fontSize: "0.97rem" }}>
               {departments[currentIndex].label.split("\n").map((line, i) => (
                 <span key={i}>{line}{i === 0 && <br />}</span>
               ))}
@@ -194,11 +194,11 @@ export default function Departments() {
           <button
             onClick={next}
             className="absolute flex items-center justify-center z-20"
-            style={{ right: 0, width: 38, height: 38, borderRadius: 8, background: "#ffffff", boxShadow: "0 2px 12px rgba(37,99,235,0.18)", border: "none", cursor: "pointer" }}
+            style={{ right: 0, width: 38, height: 38, borderRadius: 8, background: "#ffffff", boxShadow: "0 2px 12px rgba(124,63,160,0.18)", border: "none", cursor: "pointer" }}
             aria-label="Next"
           >
             <svg viewBox="0 0 24 24" fill="none" width="18" height="18">
-              <path d="M9 18l6-6-6-6" stroke="#2563eb" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M9 18l6-6-6-6" stroke="#7C3FA0" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </button>
         </div>
@@ -213,7 +213,7 @@ export default function Departments() {
                 width: i === currentIndex ? 20 : 8,
                 height: 8,
                 borderRadius: 4,
-                background: i === currentIndex ? "#2563eb" : "#bfdbfe",
+                background: i === currentIndex ? "#7C3FA0" : "#EAD9F5",
                 border: "none",
                 cursor: "pointer",
                 transition: "all 0.3s ease",
@@ -229,14 +229,14 @@ export default function Departments() {
       <div className="flex justify-center mt-5">
         <button
           style={{
-            background: "#2563eb",
+            background: "#7C3FA0",
             color: "#fff",
             fontWeight: 700,
             padding: "11px 20px",
             borderRadius: 8,
             border: "none",
             cursor: "pointer",
-            boxShadow: "0 4px 18px rgba(37,99,235,0.35)",
+            boxShadow: "0 4px 18px rgba(124,63,160,0.35)",
             letterSpacing: "0.02em",
             fontSize: "0.9rem",
           }}

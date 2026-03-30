@@ -18,16 +18,16 @@ export default function BookAppointment() {
         <div className="flex flex-col flex-1 w-full lg:max-w-[620px]">
 
           {/* Heading */}
-          <p className="font-bold text-sm mb-1" style={{ color: "#2563eb", letterSpacing: "0.08em" }}>
+          <p className="font-bold text-sm mb-1" style={{ color: "#7C3FA0", letterSpacing: "0.08em" }}>
             BOOK AN
           </p>
-          <h2 className="font-extrabold max-sm:mb-4 mb-8 text-3xl lg:text-[42px]" style={{ color: "#0f2d5e", lineHeight: 1.1 }}>
+          <h2 className="font-extrabold max-sm:mb-4 mb-8 text-3xl lg:text-[42px]" style={{ color: "#1E0A2E", lineHeight: 1.1 }}>
             Appointment
           </h2>
 
           {/* Decorative dot */}
           <div className="flex justify-center max-sm:mb-0 mb-6">
-            <div style={{ width: 10, height: 10, borderRadius: "50%", background: "#2563eb", opacity: 0.5 }} />
+            <div style={{ width: 10, height: 10, borderRadius: "50%", background: "#7C3FA0", opacity: 0.5 }} />
           </div>
 
           {/* Row 1: Name + Phone */}
@@ -43,7 +43,7 @@ export default function BookAppointment() {
                   borderRadius: 50,
                   padding: "14px 22px",
                   fontSize: "0.95rem",
-                  color: "#94a3b8",
+                  color: "#B090C0",
                   background: "#fff",
                 }}
               />
@@ -59,7 +59,7 @@ export default function BookAppointment() {
                   borderRadius: 50,
                   padding: "14px 22px",
                   fontSize: "0.95rem",
-                  color: "#94a3b8",
+                  color: "#B090C0",
                   background: "#fff",
                 }}
               />
@@ -78,7 +78,7 @@ export default function BookAppointment() {
                 borderRadius: 50,
                 padding: "14px 22px",
                 fontSize: "0.95rem",
-                color: "#94a3b8",
+                color: "#B090C0",
                 background: "#fff",
               }}
             />
@@ -98,10 +98,10 @@ export default function BookAppointment() {
               >
                 {/* Calendar icon */}
                 <svg viewBox="0 0 20 20" fill="none" width="18" height="18">
-                  <rect x="2" y="4" width="16" height="14" rx="2" stroke="#2563eb" strokeWidth="1.5"/>
-                  <path d="M6 2v4M14 2v4M2 8h16" stroke="#2563eb" strokeWidth="1.5" strokeLinecap="round"/>
+                  <rect x="2" y="4" width="16" height="14" rx="2" stroke="#7C3FA0" strokeWidth="1.5"/>
+                  <path d="M6 2v4M14 2v4M2 8h16" stroke="#7C3FA0" strokeWidth="1.5" strokeLinecap="round"/>
                 </svg>
-                <span style={{ color: "#94a3b8", fontSize: "0.95rem" }}>August 24, 2023</span>
+                <span style={{ color: "#B090C0", fontSize: "0.95rem" }}>August 24, 2023</span>
               </div>
             </div>
             <div className="flex flex-col flex-1">
@@ -116,10 +116,10 @@ export default function BookAppointment() {
               >
                 {/* Clock icon */}
                 <svg viewBox="0 0 20 20" fill="none" width="18" height="18">
-                  <circle cx="10" cy="10" r="8" stroke="#2563eb" strokeWidth="1.5"/>
-                  <path d="M10 6v4l3 2" stroke="#2563eb" strokeWidth="1.5" strokeLinecap="round"/>
+                  <circle cx="10" cy="10" r="8" stroke="#7C3FA0" strokeWidth="1.5"/>
+                  <path d="M10 6v4l3 2" stroke="#7C3FA0" strokeWidth="1.5" strokeLinecap="round"/>
                 </svg>
-                <span style={{ color: "#94a3b8", fontSize: "0.95rem" }}>10:00AM</span>
+                <span style={{ color: "#B090C0", fontSize: "0.95rem" }}>10:00AM</span>
               </div>
             </div>
           </div>
@@ -136,7 +136,7 @@ export default function BookAppointment() {
                       width: 18,
                       height: 18,
                       borderRadius: "50%",
-                      border: `2px solid ${reason === r ? "#2563eb" : "#cbd5e1"}`,
+                      border: `2px solid ${reason === r ? "#7C3FA0" : "#cbd5e1"}`,
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
@@ -145,7 +145,7 @@ export default function BookAppointment() {
                     }}
                   >
                     {reason === r && (
-                      <div style={{ width: 8, height: 8, borderRadius: "50%", background: "#2563eb" }} />
+                      <div style={{ width: 8, height: 8, borderRadius: "50%", background: "#7C3FA0" }} />
                     )}
                   </div>
                   {r}
@@ -158,7 +158,7 @@ export default function BookAppointment() {
             <button
               className="flex items-center gap-3 font-bold text-white"
               style={{
-                background: "#1e3a6e",
+                background: "#1E0A2E",
                 border: "none",
                 borderRadius: 50,
                 padding: "14px 32px",
@@ -188,7 +188,7 @@ export default function BookAppointment() {
               left: 0,
               right: 0,
               bottom: -10,
-              background: "#deeaf8",
+              background: "#F0E5FA",
               borderRadius: "62% 38% 46% 54% / 60% 44% 56% 40%",
               zIndex: 0,
             }}
@@ -203,9 +203,9 @@ export default function BookAppointment() {
               right: 16,
               bottom: 30,
               borderRadius: 24,
-              background: "#b8d4f0",
+              background: "#E9D5FF",
               zIndex: 1,
-              boxShadow: "0 8px 32px rgba(37,99,235,0.10)",
+              boxShadow: "0 8px 32px rgba(124,63,160,0.10)",
             }}
           >
             <img

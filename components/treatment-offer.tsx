@@ -73,7 +73,7 @@ export default function TreatmentsWeOffer() {
         {/* Section label */}
         <p
           className="text-xs uppercase tracking-widest mb-3 font-semibold"
-          style={{ color: "#7eb8ef", letterSpacing: "0.18em" }}
+          style={{ color: "#C084FC", letterSpacing: "0.18em" }}
         >
           Treatments We Offer
         </p>
@@ -105,12 +105,12 @@ export default function TreatmentsWeOffer() {
                     transition: "all 0.25s ease",
                     background:
                       activeTab === idx
-                        ? "linear-gradient(135deg, #1e7fd4 0%, #1565c0 100%)"
-                        : "linear-gradient(135deg, #2196f3 0%, #1976d2 100%)",
+                        ? "linear-gradient(135deg, #5C1F82 0%, #9B4FC8 100%)"
+                        : "linear-gradient(135deg, #7C3FA0 0%, #5C1F82 100%)",
                     boxShadow:
                       activeTab === idx
-                        ? "0 0 0 4px rgba(33,150,243,0.38), 0 6px 20px rgba(33,150,243,0.38)"
-                        : "0 4px 14px rgba(33,150,243,0.2)",
+                        ? "0 0 0 4px rgba(124,63,160,0.38), 0 6px 20px rgba(124,63,160,0.38)"
+                        : "0 4px 14px rgba(124,63,160,0.2)",
                     transform: activeTab === idx ? "scale(1.13)" : "scale(1)",
                     opacity: activeTab === idx ? 1 : 0.82,
                   }}
@@ -132,7 +132,7 @@ export default function TreatmentsWeOffer() {
             {/* Active treatment description */}
             <p
               className="text-sm md:text-base leading-relaxed max-sm:mb-6 mb-10"
-              style={{ color: "#b0b8c8", maxWidth: 460 }}
+              style={{ color: "#C8A8D8", maxWidth: 460 }}
             >
               {current.description}
             </p>
@@ -141,8 +141,8 @@ export default function TreatmentsWeOffer() {
             <button
               className="flex items-center gap-2 px-5 py-3 sm:px-7 rounded text-sm font-semibold text-white hover:opacity-90 active:scale-95"
               style={{
-                background: "linear-gradient(90deg, #2196f3 0%, #1565c0 100%)",
-                boxShadow: "0 4px 18px rgba(33,150,243,0.35)",
+                background: "linear-gradient(90deg, #7C3FA0 0%, #5C1F82 100%)",
+                boxShadow: "0 4px 18px rgba(124,63,160,0.35)",
                 letterSpacing: "0.03em",
                 fontSize: "0.97rem",
                 transition: "all 0.2s ease",

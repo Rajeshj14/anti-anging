@@ -164,7 +164,7 @@ export default function HeroBanner() {
             }}
           >
             <Image
-              src="/hero.jpg"
+              src="/banner.png"
               alt="Anti-aging treatment in Bangalore"
               fill
               style={{ objectFit: "cover", objectPosition: "center top" }}
