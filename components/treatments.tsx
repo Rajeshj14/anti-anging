@@ -43,7 +43,7 @@ const values = [
 
 export default function OurValues() {
   const [active, setActive] = useState(1);
-  const [hoveredCard, setHoveredCard] = useState(null);
+  const [hoveredCard, setHoveredCard] = useState<number | null>(null);
 
   return (
     <section className="bg-white flex flex-col items-center justify-center max-sm:py-5 py-10 px-4">
