@@ -54,7 +54,7 @@ export default function MedicalAboutSection() {
             }}
           >
             <img
-              src="/CLINIC-pic1.jpg"
+              src="/Clinic-pic1.JPG"
               alt="Medical procedure"
               className="w-full h-full object-cover"
             />
